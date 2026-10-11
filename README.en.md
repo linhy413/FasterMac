@@ -15,8 +15,8 @@ FasterMac desktop application.
 
 ## Download and install
 
-**[Download FasterMac 1.1.8 preview DMG](https://github.com/linhy413/FasterMac/releases/download/v1.1.8/FasterMac-1.1.8-arm64.dmg)**
-· [Release notes and SHA-256 checksum](https://github.com/linhy413/FasterMac/releases/tag/v1.1.8)
+**[Download FasterMac 1.1.9 preview DMG](https://github.com/linhy413/FasterMac/releases/download/v1.1.9/FasterMac-1.1.9-arm64.dmg)**
+· [Release notes and SHA-256 checksum](https://github.com/linhy413/FasterMac/releases/tag/v1.1.9)
 
 Requires **Apple Silicon and macOS 13 or later**. Open the DMG and drag FasterMac
 to Applications. Quit the old version before replacing it; user data lives
@@ -28,6 +28,10 @@ source and checksum, follow [Apple's instructions](https://support.apple.com/102
 in System Settings → Privacy & Security. The complete app preview may be used
 free of charge under the separate license included in the DMG; its complete
 source is not included in this repository.
+
+If the middle button stops working after an update, re-enable FasterMac in
+System Settings → Privacy & Security → Accessibility. An ad-hoc signature change
+may require renewed authorization; interception recovers automatically afterward.
 
 ## Public components
 
@@ -61,8 +65,8 @@ Run `bash scripts/build.sh` to build `.build/libFasterMacKit.a` independently.
 The complete app brings screenshot pinning, clipboard history, continuous image
 browsing and column-based file management into one launcher. The screenshots
 below show the full app; those interfaces and the workflow host remain proprietary.
-The app also includes a permanent “GitHub Home” action linking to this official
-project and identifying linhy413 as its creator.
+The app also includes a permanent “Software Update” action in the bottom-right launcher cell,
+with an update icon. It links to this official project and credits linhy413.
 
 ![FasterMac file manager](assets/screenshots/file-manager.png)
 ![FasterMac image viewer](assets/screenshots/image-viewer.png)

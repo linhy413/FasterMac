@@ -27,12 +27,14 @@ FasterMac 是一个把截图、剪贴板、连续看图和文件整理集中到�
 
 ## 下载安装
 
-**[下载 FasterMac 1.1.8 预览版 DMG](https://github.com/linhy413/FasterMac/releases/download/v1.1.8/FasterMac-1.1.8-arm64.dmg)**
-· [版本说明与 SHA-256 校验文件](https://github.com/linhy413/FasterMac/releases/tag/v1.1.8)
+**[下载 FasterMac 1.1.9 预览版 DMG](https://github.com/linhy413/FasterMac/releases/download/v1.1.9/FasterMac-1.1.9-arm64.dmg)**
+· [版本说明与 SHA-256 校验文件](https://github.com/linhy413/FasterMac/releases/tag/v1.1.9)
 
 支持 **Apple Silicon（M 系列芯片）、macOS 13 或更高版本**。打开 DMG，将 FasterMac 拖入“应用程序”后启动。更新时先退出旧版，再拖入替换；用户数据独立保存在本机用户目录中。
 
 此预览版使用本地 ad-hoc 签名，**尚未经过 Apple Developer ID 签名和公证**，首次打开可能被 macOS 拦截。确认来自本仓库并核对校验值后，可按 [Apple 官方说明](https://support.apple.com/zh-cn/102445) 在“系统设置 → 隐私与安全性”中处理。完整应用按 DMG 内的独立许可免费试用，完整应用源码不包含在此仓库中。
+
+升级后若中键无响应，请在“系统设置 → 隐私与安全性 → 辅助功能”重新开启 FasterMac。预览包的 ad-hoc 签名变化可能需要重新授权；授权后软件会自动恢复中键拦截，无需再次重启。
 
 ## 这次开源了什么
 
@@ -125,7 +127,7 @@ FasterMac 还包含截图标注、截图 OCR、摘取文字、快速记事、倒
 
 动作面板可通过 `Command + Option + Space` 呼出，也可以从菜单栏或鼠标中键打开。不同场景下，可以把真正需要的动作放到离手最近的位置。
 
-内置“GitHub 主页”动作保留作者与项目入口，点击可直接打开此仓库；该内置条目不能从应用面板中移除。
+内置“软件更新”动作默认位于动作面板右下角，使用更新图标；点击可打开作者的官方 GitHub 项目首页。该条目不能移除，并保留 linhy413 的作者署名。
 
 ## 完整应用与反馈
 
