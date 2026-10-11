@@ -1,0 +1,27 @@
+name: Bug report / 问题反馈
+description: Report a public component or FasterMac app issue.
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component / 组件
+      options:
+        - SmartZip naming
+        - Screenshot geometry
+        - Shake detector
+        - FasterMac desktop app
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: macOS version and chip / 系统版本与芯片
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result / 复现步骤与结果
+      description: Remove personal paths, clipboard contents and secrets before posting.
+    validations:
+      required: true
