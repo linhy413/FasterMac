@@ -25,6 +25,15 @@ FasterMac 是一个把截图、剪贴板、连续看图和文件整理集中到�
 > 开发说明：项目由 linhy413 发起、设计和维护，使用 Codex 辅助开发（Vibe Coding）。
 > 公开组件采用 **AGPL-3.0-only**，附合理署名与来源保留条款；完整应用和品牌素材另行授权。
 
+## 下载安装
+
+**[下载 FasterMac 1.1.8 预览版 DMG](https://github.com/linhy413/FasterMac/releases/download/v1.1.8/FasterMac-1.1.8-arm64.dmg)**
+· [版本说明与 SHA-256 校验文件](https://github.com/linhy413/FasterMac/releases/tag/v1.1.8)
+
+支持 **Apple Silicon（M 系列芯片）、macOS 13 或更高版本**。打开 DMG，将 FasterMac 拖入“应用程序”后启动。更新时先退出旧版，再拖入替换；用户数据独立保存在本机用户目录中。
+
+此预览版使用本地 ad-hoc 签名，**尚未经过 Apple Developer ID 签名和公证**，首次打开可能被 macOS 拦截。确认来自本仓库并核对校验值后，可按 [Apple 官方说明](https://support.apple.com/zh-cn/102445) 在“系统设置 → 隐私与安全性”中处理。完整应用按 DMG 内的独立许可免费试用，完整应用源码不包含在此仓库中。
+
 ## 这次开源了什么
 
 | 组件 | 解决的问题 | 源码 |
@@ -120,8 +129,7 @@ FasterMac 还包含截图标注、截图 OCR、摘取文字、快速记事、倒
 
 ## 完整应用与反馈
 
-完整应用面向 macOS 13 或更高版本。本次首次公开的是组件源码，尚未在本仓库发布完整客户端安装包。
-后续安装包和版本说明会通过 [Releases](https://github.com/linhy413/FasterMac/releases) 发布。
+完整应用安装包和版本说明通过 [Releases](https://github.com/linhy413/FasterMac/releases) 发布；当前预览版适用于 Apple Silicon 和 macOS 13 或更高版本。
 完整应用按功能可能需要屏幕录制、辅助功能或自动化权限；运行上面的组件示例不需要这些权限。
 
 欢迎通过 [Issues](https://github.com/linhy413/FasterMac/issues) 反馈问题或建议。

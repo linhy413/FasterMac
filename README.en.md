@@ -13,6 +13,22 @@ The project was initiated and designed by linhy413, with Codex-assisted
 development. This repository contains a source subset, not the complete
 FasterMac desktop application.
 
+## Download and install
+
+**[Download FasterMac 1.1.8 preview DMG](https://github.com/linhy413/FasterMac/releases/download/v1.1.8/FasterMac-1.1.8-arm64.dmg)**
+· [Release notes and SHA-256 checksum](https://github.com/linhy413/FasterMac/releases/tag/v1.1.8)
+
+Requires **Apple Silicon and macOS 13 or later**. Open the DMG and drag FasterMac
+to Applications. Quit the old version before replacing it; user data lives
+separately in your local user directory.
+
+This preview is ad-hoc signed and **has no Apple Developer ID signature or
+notarization**. macOS may block the first launch. After checking the official
+source and checksum, follow [Apple's instructions](https://support.apple.com/102445)
+in System Settings → Privacy & Security. The complete app preview may be used
+free of charge under the separate license included in the DMG; its complete
+source is not included in this repository.
+
 ## Public components
 
 | Component | Purpose |
@@ -51,9 +67,9 @@ project and identifying linhy413 as its creator.
 ![FasterMac file manager](assets/screenshots/file-manager.png)
 ![FasterMac image viewer](assets/screenshots/image-viewer.png)
 
-The initial repository release contains component source only. Desktop installers
-have not yet been published here. Follow [Releases](https://github.com/linhy413/FasterMac/releases)
-for future app packages. The full app targets macOS 13 or later.
+Desktop installers and version notes are published in
+[Releases](https://github.com/linhy413/FasterMac/releases). The current preview
+supports Apple Silicon and macOS 13 or later.
 
 ## License and attribution
 

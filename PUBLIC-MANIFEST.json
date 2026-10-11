@@ -70,11 +70,11 @@
     },
     {
       "path": "README.en.md",
-      "sha256": "37ef7f9d446469ae3b20655100161cc1ba6c0630f96baff84a4eab099a484185"
+      "sha256": "1a67ac2749964eda529550885c59b46381122d43248dcc1ba555ee80c92747db"
     },
     {
       "path": "README.md",
-      "sha256": "3762371b3096e5a0935c4e0bb967950749a6082bdbf402ea5c581c5affe897d0"
+      "sha256": "c99a1bbd377bb2c82de49022dbdd44929f87b2d337668910e25a7b1af66ad7d1"
     },
     {
       "path": "Sources/FasterMacKit/Actions/QMSmartZipNaming.h",
@@ -138,7 +138,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "ccc42d3d8a5d59021ed8f12cc7c6ec061f0bd16ebd909e98b8e14e0f7cf40edd"
+      "sha256": "86133e44d92a6effa1e77f3b5ea9d4395e979b4c9ca4db252a5c72b43a8c06c9"
     },
     {
       "path": "scripts/build.sh",
