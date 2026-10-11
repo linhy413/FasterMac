@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please credit FasterMac by linhy413 and link to the official repository."
+type: software
+title: "FasterMac public components"
+authors:
+  - name: "linhy413"
+    website: "https://github.com/linhy413"
+repository-code: "https://github.com/linhy413/FasterMac"
+url: "https://github.com/linhy413/FasterMac"
+version: "0.1.0"
+date-released: "2026-10-11"
+license: "AGPL-3.0-only"
+abstract: "Selected macOS utilities from FasterMac: archive naming, screenshot geometry and drag-shake detection. See ATTRIBUTION.md for Section 7 terms."

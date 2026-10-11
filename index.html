@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FasterMac by linhy413 — 部分开源的 macOS 效率工具</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #1f2328;
+      background: #fff;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 32px 72px;
+    }
+    h1, h2, h3 { line-height: 1.25; font-weight: 600; }
+    h1 { font-size: 2em; }
+    h2 {
+      margin-top: 40px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d8dee4;
+      font-size: 1.5em;
+    }
+    h3 { margin-top: 32px; font-size: 1.25em; }
+    p { margin: 16px 0; }
+    a { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    blockquote {
+      margin: 0 0 24px;
+      padding: 8px 16px;
+      color: #57606a;
+      border-left: 4px solid #d0d7de;
+      background: #f6f8fa;
+    }
+    blockquote p { margin: 0; }
+    ul, ol { padding-left: 2em; }
+    li + li { margin-top: 4px; }
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: #eff1f3;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 85%;
+    }
+    .center { text-align: center; }
+    .icon { width: 150px; height: 150px; border-radius: 28px; }
+    .title { margin: 10px 0 4px; font-size: 2.25em; }
+    .subtitle { margin: 4px 0 12px; color: #57606a; }
+    .links { margin-bottom: 30px; }
+    .screenshot {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 22px auto 30px;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+    }
+    .clipboard-shot { width: 280px; }
+    .copyright { color: #57606a; }
+    @media (max-width: 640px) {
+      main { width: 100%; padding: 24px 18px 48px; }
+      .icon { width: 112px; height: 112px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <blockquote>
+      <p><strong>FasterMac 由 <a href="https://github.com/linhy413">linhy413</a> 发起、设计和维护，使用 Codex 辅助开发。</strong></p>
+    </blockquote>
+
+    <div class="center">
+      <img class="icon" src="assets/icon.png" alt="FasterMac 图标">
+      <h1 class="title">FasterMac</h1>
+      <p class="subtitle">把熟悉的效率工作流带到 macOS</p>
+      <p class="links">
+        <a href="https://github.com/linhy413/FasterMac">官方 GitHub 仓库</a>
+        · <a href="https://github.com/linhy413/FasterMac/blob/main/docs/components.md">开源组件</a>
+        · <a href="https://github.com/linhy413/FasterMac/issues">反馈问题</a>
+      </p>
+    </div>
+
+    <h2>为什么做 FasterMac</h2>
+    <p>我长期习惯 Windows 上那种“用一个入口集中调用各种动作”的工作方式。来到 Mac 以后，熟悉的工具没有 macOS 版本，原来顺手的截图贴图、剪贴板历史、连续看图和文件整理流程，也被分散到了不同的软件里。</p>
+    <p>于是我开始做 FasterMac：不是把 Windows 界面照搬到 Mac，而是保留那些已经形成肌肉记忆的操作逻辑，再用 macOS 的窗口、快捷键、Space 和系统能力重新实现。</p>
+    <p>FasterMac 希望解决的事情很简单：少切换应用，少重复操作，让常用动作随时都在手边。</p>
+
+    <h2>可独立使用的开源组件</h2>
+    <p>首批公开 SmartZip 命名算法、截图坐标与像素换算、拖拽晃动识别，附独立构建脚本、测试和命令行示例。完整应用继续作为独立产品维护。</p>
+    <p>在仓库中运行 <code>bash scripts/test.sh</code> 即可构建和验证。公开代码使用 AGPL-3.0-only，署名为 linhy413。</p>
+
+    <h2>完整应用预览</h2>
+    <p>以下界面展示完整应用，不属于本次公开源码。</p>
+
+    <h3>截图悬浮：把参考内容留在眼前</h3>
+    <p>拖动选择屏幕上的任意区域，截图会立刻变成置顶悬浮图。查资料、对照设计、录入数据或边看边写时，不必再在几个窗口之间来回切换。</p>
+    <ul>
+      <li>截图后直接置顶，可跨普通 Space 使用</li>
+      <li>支持拖动、缩放、调整大小和透明度</li>
+      <li>可以锁定位置、复制图片或一键关闭全部贴图</li>
+      <li>按住 Command 拖动，可把悬浮图导出为图片文件</li>
+    </ul>
+    <img class="screenshot" src="assets/screenshots/floating-screenshot.png" alt="FasterMac 截图悬浮">
+
+    <h3>剪贴板：复制过的内容随时找回来</h3>
+    <p>FasterMac 会在本机记录最近复制的文本和图片。窗口隐藏时只保留屏幕右侧的轻量热区，鼠标移到边缘即可唤出；切换 Space 或进入其他应用的全屏界面时也能继续使用。</p>
+    <ul>
+      <li>自动记录文本与图片历史</li>
+      <li>支持搜索、收藏和单条删除</li>
+      <li>点击条目即可复制并尝试粘贴回目标应用</li>
+      <li>图片可以预览，也可以直接变成置顶悬浮图</li>
+    </ul>
+    <img class="screenshot clipboard-shot" src="assets/screenshots/clipboard.png" alt="FasterMac 剪贴板">
+
+    <h3>PC 看图：连续浏览，不被单张预览打断</h3>
+    <p>这是一个偏向熟悉桌面习惯的图片浏览器。打开一张图片后，可以继续浏览同一目录中的其他图片，不必每次回到 Finder 重新选择。</p>
+    <ul>
+      <li>支持上一张、下一张和幻灯片播放</li>
+      <li>支持适合窗口、实际大小、缩放和旋转</li>
+      <li>支持全屏、复制、分享、打印和查看图片信息</li>
+      <li>可以在 Finder 中定位当前图片，或将图片移到废纸篓</li>
+    </ul>
+    <img class="screenshot" src="assets/screenshots/image-viewer.png" alt="FasterMac PC 看图">
+
+    <h3>文件夹管理器：用更熟悉的方式整理文件</h3>
+    <p>文件夹管理器把分栏导航和图标视图放在同一个窗口里：上方快速穿行目录层级，下方查看和操作当前文件夹内容。它保留 macOS 的原生外观，同时补上更接近传统桌面文件管理器的键盘与文件操作习惯。</p>
+    <ul>
+      <li>分栏导航、图标视图、标签页、排序与即时过滤</li>
+      <li>支持收藏目录、预览信息和 Finder 双向定位</li>
+      <li>支持多选、拖放、剪切、复制和粘贴</li>
+      <li>支持直接按 Delete 移到废纸篓</li>
+      <li>内置批量重命名、名称互换、合并/解散文件夹和 SmartZip</li>
+    </ul>
+    <img class="screenshot" src="assets/screenshots/file-manager.png" alt="FasterMac 文件夹管理器">
+
+    <h2>不只这些</h2>
+    <p>FasterMac 还包含截图标注、截图 OCR、摘取文字、快速记事、倒计时、Spotlight 搜索、PDF 工具、批量文件动作，以及可以自行组合的快捷键、脚本和命令动作。</p>
+    <p>动作面板可通过 <code>Command + Option + Space</code> 呼出，也可以从菜单栏或鼠标中键打开。不同场景下，可以把真正需要的动作放到离手最近的位置。</p>
+
+    <h2>完整应用与反馈</h2>
+    <p>完整应用面向 macOS 13 或更高版本。本次首次公开组件源码，尚未在仓库发布完整客户端安装包。后续安装包和版本说明会通过 <a href="https://github.com/linhy413/FasterMac/releases">Releases</a> 发布。</p>
+
+    <h2>发布与许可</h2>
+    <p>公开组件使用 <a href="https://github.com/linhy413/FasterMac/blob/main/LICENSE">AGPL-3.0-only</a>，并适用合理署名与来源保留条款。允许遵守许可证的商业使用，也可另行洽谈商业授权。完整应用未公开代码和品牌素材另行授权。</p>
+    <p class="copyright">Copyright © 2026 <a href="https://github.com/linhy413">linhy413</a> · <a href="https://github.com/linhy413/FasterMac/blob/main/LICENSE-SCOPE.md">许可范围</a></p>
+  </main>
+</body>
+</html>

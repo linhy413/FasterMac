@@ -1,0 +1,152 @@
+{
+  "files": [
+    {
+      "path": ".github/CODEOWNERS",
+      "sha256": "ebf726263e8619389487c13850f8d02f108ed4fc944ef622ee43f18032b0698b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "sha256": "ded30b37a9ac9a4cf9b674d728fef92f75c574f95414d5f75d03b920bfe4c7e2"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "sha256": "13d20d79be15428cd562cab925ba3a1c04362ec20ff60b21662128ad713f4e41"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "1f90c5f606c60b9dc15e96d2018726b6bf45a72fcd8000d45f2e274960031e49"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "sha256": "e2ee52d2dc6a3654b39e2c7aef07f01cf97688c93e4737688d6e8e6424a75cc3"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "82402d4dd220a0cab40a82c814baedf343d498f22963636928e4c9996d0f87df"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "sha256": "9b6a8eca53e50fd99271f7e2b5028c0eae7386be292a09607edf86cee4cbb836"
+    },
+    {
+      "path": "BRAND.md",
+      "sha256": "b4a0434d5040886cad60ae3471033672e74e6a80c4658e0db89ae372852c72d6"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "7a3856497fccd28db1a08b05c41a679d52b156000cf6cc7cf8539c6bb5d50701"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "09c84b1fe4c4bc19492bcd41400ab02091a4353aa9202a10beeed2d93c521bf2"
+    },
+    {
+      "path": "COMMERCIAL.md",
+      "sha256": "d9bb5e2ba5272806bdc25bc0d3c0283fb09f957acfdf843893bc91829b88edd0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "3f2d2740ae843b709bf523b96d572c57451345e17b01fb73aa287b58668ace3d"
+    },
+    {
+      "path": "Examples/smartzip-name.m",
+      "sha256": "d34c7a7b0f3467f8ce038f88bbed0ffa89bd4b8d34dddf394b5323ce25db365e"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "LICENSE-SCOPE.md",
+      "sha256": "523f29443a3f2ffe07d2eab9af89293dac29919003b8846b8eb9a52718264661"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "8b66903deb9ccc1c0dd1e7cb42dd94394e12ff17ba0363ca34f6681ff81318a7"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "37ef7f9d446469ae3b20655100161cc1ba6c0630f96baff84a4eab099a484185"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3762371b3096e5a0935c4e0bb967950749a6082bdbf402ea5c581c5affe897d0"
+    },
+    {
+      "path": "Sources/FasterMacKit/Actions/QMSmartZipNaming.h",
+      "sha256": "4b82cb8ae152ec4b70ec860767178d8846992c51c25e029014bd8ca30798b236"
+    },
+    {
+      "path": "Sources/FasterMacKit/Actions/QMSmartZipNaming.m",
+      "sha256": "fdb22d0a9c4d2e91d343826ea050da2cd4c06c20a7ba3467a95319fd5f05c8ce"
+    },
+    {
+      "path": "Sources/FasterMacKit/Capture/ScreenshotGeometry.h",
+      "sha256": "0ec03126067a45b08792dceaf223c9505c1a91a8deca2ad8cd53e215a760daa8"
+    },
+    {
+      "path": "Sources/FasterMacKit/Capture/ScreenshotGeometry.m",
+      "sha256": "eebb3bd3e07d175e1c414157f19eb08ad4844136b1baa154bb364f690c05fc23"
+    },
+    {
+      "path": "Sources/FasterMacKit/FasterMacKit.h",
+      "sha256": "3e3b61437d78a75526fc921082636c14a4ebcb489ded24ac845577968eae78e8"
+    },
+    {
+      "path": "Sources/FasterMacKit/Windows/DropShelfShakeDetector.h",
+      "sha256": "e368a82a8e825b2f403186923f15f3bb3dffa83d8e1d6f748749957f27a51f12"
+    },
+    {
+      "path": "Tests/DropShelfShakeDetectorTest.m",
+      "sha256": "325ad8776de2d46b8c423f5fb756e24d07b73bc520e163de03be238b25f41923"
+    },
+    {
+      "path": "Tests/QMSmartZipNamingTest.m",
+      "sha256": "7e4fddac4cc7bc37902e258be85e71a16d32e2964ad3b153395986bfb686ba3a"
+    },
+    {
+      "path": "Tests/ScreenshotGeometryTest.m",
+      "sha256": "76cfaa936c581a666cb942e70ed10b4dd415dd710567af6e284ff78bf142de92"
+    },
+    {
+      "path": "assets/icon.png",
+      "sha256": "de45ff5ce45c3e990b003ae4f798aa83de99d177ae449e08be3524adad454dd7"
+    },
+    {
+      "path": "assets/screenshots/clipboard.png",
+      "sha256": "94cf33715bfe28e1849e050647546a90ec72ff16a33190b74c4518010530c617"
+    },
+    {
+      "path": "assets/screenshots/file-manager.png",
+      "sha256": "e5977e4c6523aaa10c3e699ca4920cd2a7b882dba45dc9207e9f8094e69fbe32"
+    },
+    {
+      "path": "assets/screenshots/floating-screenshot.png",
+      "sha256": "4a3eb8373bd0a40d649c0a24f16c5720d215e0b500f3208db83916dbedc3af48"
+    },
+    {
+      "path": "assets/screenshots/image-viewer.png",
+      "sha256": "195c666d2f36267f214dc84e1fd94466a22b3b18ee17a21155d33064b6611445"
+    },
+    {
+      "path": "docs/components.md",
+      "sha256": "539e53c0fd480cb28d4577a5011a57185250ecdea0f0e898330296982d818462"
+    },
+    {
+      "path": "index.html",
+      "sha256": "ccc42d3d8a5d59021ed8f12cc7c6ec061f0bd16ebd909e98b8e14e0f7cf40edd"
+    },
+    {
+      "path": "scripts/build.sh",
+      "sha256": "2d3a4f389da391c2aa46446e433fcaa862b5ea659dd9c01b4c38c7019f0d2a05"
+    },
+    {
+      "path": "scripts/test.sh",
+      "sha256": "d5a87596a636173c1531c0ad5a3912e26528e4f5920dff1e126cd1b0d670af24"
+    }
+  ]
+}

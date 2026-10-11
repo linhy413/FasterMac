@@ -1,0 +1,6 @@
+.DS_Store
+.demo-home/
+*.dmg
+.build/
+*.o
+*.a
